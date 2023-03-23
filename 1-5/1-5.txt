@@ -40,7 +40,7 @@ mkdir sasaki.txt
 
 ⑤katsumataディレクトリの中身を表示してください。
 （「murano.txt」と「sasaki.txt」が表示される）
-pws katsumata
+ls katsumata
 
 
 
@@ -52,12 +52,12 @@ cp sasaki.txt minami
 
 
 ⑦「minami」フォルダの「murano.txt」ファイルを削除してください。
-rm murano.xt
+rm murano.txt
 
 
 ⑧「minami」フォルダの「sasaki.txt」を「furuyama」フォルダに移動してください。
 cd minami
-cd sasaki.txt furuyama
+mv sasaki.txt furuyama
 
 
 
@@ -71,7 +71,7 @@ rm minami
 ⑩「furuyama」フォルダの「sasaki.txt」の更新日付を変更してください。
 （タイムスタンプ）
 
-touch file sasaki.txt
+touch sasaki.txt
 
 https://linuxxxxx.com/linux-commands/touch.html
 ↑参照
@@ -97,7 +97,7 @@ find murano.txt
 
 ⑮「katsumata」ディレクトリで現在アクセス（滞在）してるディレクトリを表示して下さい。
 
-find/./kakeko/katsumata
+pwd katsumata
 
 
 エビデンス写真↓
