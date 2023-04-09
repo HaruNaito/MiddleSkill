@@ -8,19 +8,37 @@ public class test1 {
                 //問題1:変数"numa"にインクリメント演算子を利用し1マイナスしたものを表示してください。
                 
                 int numa = 5;
-                int bar = 0;
+                int bar = 1;
                 bar = numa--;
-                System.out.println( bar);
+                System.out.println( numa);
+            
+                
+     
             
         System.out.println("問２");
         //問題2:変数"numb"の値が正の場合は"positive"、負の場合は"negative"、0の場合は"zero"と出力するプログラムを三項演算子を用いて作成してください。
         //(String result変数を用いてそこに値を格納しそれを出力する形式でお願いいたします)
-        
-        int numb = 5;
-        String result  = numb >  5 ?"positive" : "negative" ;
-        System.out.println(result);
+      
     
-//改行
+        
+        //分からなかったので、if文から三項演算子を考える
+        //int num = 5;
+        //if (num == 5) {
+        	// System.out.println("positive");
+        //} else if( num == 0 ) {
+          //  System.out.println("zero");
+        //}  else {
+        	//	 System.out.println("negative");
+        //}
+        int num = 5;
+        String result = num==5 ?num>=5 ? 
+        "positive" : "negative" 
+                : num==0 ?
+               "zero": "";
+        System.out.println(result);  
+        
+        //改行
+        
 System.out.println("問３");
 //問題3:"numc","numd"2つの変数の大きい方の値を出力するプログラムを三項演算子を用いて作成してください。
 //(int intResult変数を用いてそこに値を格納しそれを出力する形式でお願いいたします)
@@ -30,10 +48,9 @@ int numc = 1;
 int numd = 2;
 int intResult = 0;
 
-numc = numd == 1 ? numc : numd;
-System.out.println("numd = " + numd);
+intResult = Math.max(numc, numd);
+System.out.println(intResult);
 
-        
 //改行
 System.out.println("問４");
 //問題4:"nume"と"numf"の変数が両方の正の場合は"both positive"、どちらかの値が正の場合は"one positive"、
@@ -43,5 +60,13 @@ System.out.println("問４");
 int nume = 4;
 int numf = -3;
 String results = "";
+
+
+
+
+
+
+
+
 }
 }
