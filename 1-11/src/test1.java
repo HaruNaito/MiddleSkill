@@ -61,9 +61,13 @@ int nume = 4;
 int numf = -3;
 String results = "";
 
+//条件式 ? trueの場合の戻り値 : falseの場合の戻り値
 
-
-
+results = (nume== 0 && numf == 0) ? (numf== 0 || numf == 0)? 
+"both positive" : "one positive" 
+        : (nume<= 0 && numf <= 0) ? 
+        "both negative" : "etc";
+System.out.println(results); 
 
 
 
